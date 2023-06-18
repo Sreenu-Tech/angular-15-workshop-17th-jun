@@ -23,7 +23,7 @@ describe('AppComponent', () => {
   it(`should have as title 'swiggy-clone'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('swiggy-clone');
+    expect(app.title).toEqual('swiggy clone v2');
   });
 
   it('should render title', () => {
