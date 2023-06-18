@@ -1,0 +1,79 @@
+Browser (Device/Platform)
+-------------------------
+-------------------
+Static In Nature
+-----------------------
+1. HTML - Design the web page
+2. CSS - Style the web page
+----------------------------
+Programming lang. for Web
+------------------------
+3. Java Script : Change the work of HTML/CSS
+JS is make the HTML/CSS as dynamic in nature
+---------------
+How fast?
+-------------
+Frameworks
+-------------
+SPA (Single Page Application)
+------------------------
+1. Load only those content which are required
+2. This approch will save bandwidth/data of a client
+3. Reduce the server cost/memory
+4. Resuability
+----------------------
+How to Develop SPA?
+-----------------------------
+Angular 15 (framework) : SPA
+-----------------------------
+react : library (building UI blocks)
+Angular : framework
+------------------------------
+Angular : 8,9,10,11,12,13,14,15
+------------------------------
+1. HTML
+2. CSS
+3. JS
+4. Type Script
+5. Angular 15
+-----
+Tools:
+------
+1. Error Logging, GLobal expception hanlder, Sentry (tool)
+2. Performance , Google lighthouse
+3. GIT
+4. Tailwind CSS
+5. RX JS
+6. Unit test
+7. Http Caching
+8. Mockoon
+9. Mackaroo
+10.Debugging
+---------------------------
+Angular
+----------
+Swiggy Clone
+---------
+
+Install SOftware
+------------------
+1. Node Js (https://nodejs.org/en)
+2. After install, open cmd/>node -v
+3. Install Angular
+	npm install -g @angular/cli@15.2.8
+	1. npm : node package manager (https://www.npmjs.com/)
+	2. install : installtion
+	3. -g : global
+	4. @angular/cli: package name
+	5. @15.2.8 :  version of the package
+4. After install , open cmfd/> ng version
+5. Setup IDE (https://code.visualstudio.com/)
+---------------------
+Create angular application
+------------------------
+11:45 AM
+------------------------
+2.45 PM
+--------
+4:50 PM - will back
+--------

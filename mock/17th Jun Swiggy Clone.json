@@ -1,0 +1,136 @@
+{
+  "uuid": "97e34733-b166-4214-b9bc-29e168a2c47a",
+  "lastMigration": 24,
+  "name": "17th Jun Swiggy Clone",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3005,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "4cff9881-fd5b-4ce3-9169-bdc3e8b73523",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "location/search",
+      "responses": [
+        {
+          "uuid": "0325853c-fbef-4ee9-9a31-c320a47e13da",
+          "body": "[\n  {\n        \"location\":\"500081\",\n        \"address:\"Madhapur, Hitech City\"\n    },\n     {\n        \"location\":\"500081\",\n        \"address:\"Karachi Bekry, Hitech City\"\n    }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "FILE",
+          "filePath": "C:\\training\\Angular\\Workshop\\17thJun\\swiggy-clone\\mock\\location_mock.json",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "55a7c30d-85df-4926-8739-82117f407869",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "restaurants",
+      "responses": [
+        {
+          "uuid": "0cec4119-588c-40b1-ba3d-063f91dc6f41",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "FILE",
+          "filePath": "C:\\training\\Angular\\Workshop\\17thJun\\swiggy-clone\\mock\\restaurants_mock.json",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "f5f3080d-1c2d-43ce-a8ae-9e39d213a777",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "items",
+      "responses": [
+        {
+          "uuid": "7330acff-17d4-426f-8ee5-281bfaf3d9af",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "FILE",
+          "filePath": "C:\\training\\Angular\\Workshop\\17thJun\\swiggy-clone\\mock\\items_mock.json",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}

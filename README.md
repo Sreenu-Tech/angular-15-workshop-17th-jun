@@ -1,27 +1,51 @@
-# SwiggyClone
+# Courses
+1. Component
+2. Component Communication (Input/Output)
+3. Directives (*ngFor,*ngIf)
+4. NgModel
+5. Data Binding using ({{}})
+6. HTTP
+7. Service & DI
+8. RX JS 
+9. Local & Session Storage
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.8.
+10. Routing
+11. Reactive Form
+12. Tools (Error handling,Google light house)
+13. Build
+14. Dockerize
+15. QA, 50+ Question
+16. Unit Test case
 
-## Development server
+## Location Search
+```
+Method:  GET
+Endpoint : location/search?code=500081
+Results:[
+    {
+        "location":"500081",
+        "address:"Madhapur, Hitech City"
+    },
+     {
+        "location":"500081",
+        "address:"Karachi Bekry, Hitech City"
+    }
+]
+```
+## Process
+1. Click the button
+2. Handle Click action
+3. Read textbox value
+4. Pass the textbox value to the API
+5. Get the API data
+6. Print the data in UI
+7. On Selection, store the selected location info
+8. On Page load, display the stored location
+9. When location item selected, hide the list
+10. Display the selected location
+11. load the Restaurant
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Restaurant Process
+1. User Select location
+2. Then load the Restaurants
+3. On click of Restaurant display the Restaurant details

@@ -1,0 +1,18 @@
+<!--
+    routerLink: is used to navigate from one page anothe page without loading the entire application
+-->
+<a routerLink="/restaurants/{{item.resId}}">
+    <div>
+        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/lbv9zmqnmkqy2bwj3cvh"
+            alt="Restaurant" />
+        <div>
+            <h2>{{item.name}}</h2>
+            <h3>{{item.category}}</h3>
+        </div>
+        <div>
+            <div>{{item.rating}}</div>
+            <div>{{item.deliveryTime}} MINS</div>
+            <div>{{item.costForTwo}} For Two</div>
+        </div>
+    </div>
+</a>

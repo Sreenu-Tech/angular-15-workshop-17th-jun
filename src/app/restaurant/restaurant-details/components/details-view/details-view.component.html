@@ -1,0 +1,19 @@
+<div class="grid grid-cols-12 gap-3">
+    <div class="col-span-8 flex flex-col gap-3">
+        <!--Menus-->
+        <div *ngFor="let item of menuCategories">
+            <div class="flex flex-col gap-3">
+                <strong>{{item.name}}</strong>
+                <div class="flex flex-col gap-3">
+                    <app-menu-item *ngFor="let menu of item.items" [item]="menu"></app-menu-item>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Cart-->
+    <div class="col-span-4">
+         <app-cart-view></app-cart-view>
+    </div>
+   
+</div>

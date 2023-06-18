@@ -1,0 +1,56 @@
+<div>
+    <label>Location</label>
+    <input [(ngModel)]="locationName" />
+    <!--
+        {{varibale}} : this is used to bind the data in UI/HTML
+    -->
+    <!--
+        In Angualr to add any event in control/html tag
+        We need to add () and inside this bracket we have specify the name of 
+        event
+    -->
+    <button (click)="handleSearch()">Search</button>
+</div>
+
+<!--
+    Display the select location
+    if `selectedLocation` conatins data, then only display the section
+    otherwise hide the section
+    *ngIf : take boolean expression, beased on that it will render the content
+-->
+<div *ngIf="selectedLocation && locations.length==0">
+    <strong>Selected Location</strong>
+    <app-location-search-item [locationItem]="selectedLocation"></app-location-search-item>
+</div>
+
+<!--
+    print the locations
+-->
+<!--
+    Directive : This is use to manipulate the UI/HTML
+-->
+<!--
+    Loop the locations
+    *ngFor : this is used to loop the the in UI
+        This is Structural Directive
+
+    let is used to define a varibale in JS
+    item: name of the varibale
+    of : assign the array to the item
+    locations: array of data
+-->
+<div *ngFor="let item of locations">
+    <!--
+        locationItem :  is the property name
+        [locationItem] : pass the dynamic value, also support 2 way data binding
+    -->
+    <app-location-search-item [locationItem]="item" (onSelect)="handleSelection()"></app-location-search-item>
+
+</div>
+
+<!--
+    Load the restaurant
+-->
+<div *ngIf="selectedLocation">
+    <app-restaurant-list [selectedLocation]="selectedLocation"></app-restaurant-list>
+</div>
